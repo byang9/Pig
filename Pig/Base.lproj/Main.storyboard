@@ -1,13 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UyW-mz-WLZ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Open Screen Controller-->
+        <scene sceneID="Yhh-xF-sMU">
+            <objects>
+                <viewController id="UyW-mz-WLZ" customClass="OpenScreenController" customModule="Pig" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s1d-CZ-tLp"/>
+                        <viewControllerLayoutGuide type="bottom" id="uy8-7O-Ddk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRd-15-3mO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pig.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="j5A-0k-K3n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to the game of Pig!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRc-Ao-cJC">
+                                <rect key="frame" x="20" y="20" width="560" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Player 1 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p8P-Zu-Tdv">
+                                <rect key="frame" x="180" y="91" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please Enter Player 2 Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4TQ-CG-id3">
+                                <rect key="frame" x="180" y="129" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY0-2P-ORw">
+                                <rect key="frame" x="265" y="167" width="70" height="30"/>
+                                <state key="normal" title="Let's Play!"/>
+                                <connections>
+                                    <action selector="start:" destination="UyW-mz-WLZ" eventType="touchUpInside" id="MD6-7p-LCl"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="BHy-Ua-guo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sRc-Ao-cJC" firstAttribute="top" secondItem="s1d-CZ-tLp" secondAttribute="bottom" id="9OY-dY-NCA"/>
+                            <constraint firstItem="j5A-0k-K3n" firstAttribute="leading" secondItem="oRd-15-3mO" secondAttribute="leadingMargin" constant="-20" id="9gg-Nd-06z"/>
+                            <constraint firstItem="nY0-2P-ORw" firstAttribute="top" secondItem="4TQ-CG-id3" secondAttribute="bottom" constant="8" id="9it-BT-i48"/>
+                            <constraint firstItem="p8P-Zu-Tdv" firstAttribute="centerX" secondItem="oRd-15-3mO" secondAttribute="centerX" id="Aor-Vw-59M"/>
+                            <constraint firstItem="sRc-Ao-cJC" firstAttribute="leading" secondItem="oRd-15-3mO" secondAttribute="leadingMargin" id="Bll-mT-oc1"/>
+                            <constraint firstItem="p8P-Zu-Tdv" firstAttribute="top" secondItem="sRc-Ao-cJC" secondAttribute="bottom" constant="8" id="CkN-7C-6lI"/>
+                            <constraint firstItem="4TQ-CG-id3" firstAttribute="top" secondItem="p8P-Zu-Tdv" secondAttribute="bottom" constant="8" id="I8B-Cj-fAB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j5A-0k-K3n" secondAttribute="trailing" constant="-20" id="Kcj-2m-usv"/>
+                            <constraint firstItem="j5A-0k-K3n" firstAttribute="top" secondItem="oRd-15-3mO" secondAttribute="topMargin" id="TJ3-Ps-74S"/>
+                            <constraint firstItem="uy8-7O-Ddk" firstAttribute="top" secondItem="j5A-0k-K3n" secondAttribute="bottom" id="VhO-g5-Btk"/>
+                            <constraint firstItem="4TQ-CG-id3" firstAttribute="centerX" secondItem="oRd-15-3mO" secondAttribute="centerX" id="fjN-xo-dNU"/>
+                            <constraint firstItem="sRc-Ao-cJC" firstAttribute="trailing" secondItem="oRd-15-3mO" secondAttribute="trailingMargin" id="qUM-zo-Ro7"/>
+                            <constraint firstItem="sRc-Ao-cJC" firstAttribute="centerX" secondItem="oRd-15-3mO" secondAttribute="centerX" id="sPF-9v-vrS"/>
+                            <constraint firstItem="nY0-2P-ORw" firstAttribute="centerX" secondItem="oRd-15-3mO" secondAttribute="centerX" id="zbc-1p-fjs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="player1Textbox" destination="p8P-Zu-Tdv" id="7AL-7U-tDh"/>
+                        <outlet property="player2Textbox" destination="4TQ-CG-id3" id="Y6U-Na-hWV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1p-3Z-tQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="395"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pig" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +83,114 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="DxM-pV-sJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1 would you like to roll or Hold?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VX7-HU-bwD">
+                                <rect key="frame" x="20" y="20" width="560" height="166"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Turn Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGC-77-YWm">
+                                <rect key="frame" x="20" y="528" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzq-m9-l82">
+                                <rect key="frame" x="20" y="498" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Held Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDC-oF-cZB">
+                                <rect key="frame" x="20" y="558" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Turn Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="us1-M1-dXa">
+                                <rect key="frame" x="454" y="528" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjx-BW-QUm">
+                                <rect key="frame" x="454" y="498" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Held Points:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6w-tj-Kzh">
+                                <rect key="frame" x="454" y="558" width="126" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdS-Ly-IoJ">
+                                <rect key="frame" x="20" y="194" width="94" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Roll!"/>
+                                <connections>
+                                    <action selector="rollDie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D2h-ku-3HC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9P-C3-84I">
+                                <rect key="frame" x="477" y="194" width="103" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Hold"/>
+                                <connections>
+                                    <action selector="hold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWU-P0-bhg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="us1-M1-dXa" firstAttribute="top" secondItem="Yjx-BW-QUm" secondAttribute="bottom" constant="8" id="1z9-sl-BdP"/>
+                            <constraint firstItem="P9P-C3-84I" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="49N-Vx-tSq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DxM-pV-sJ8" secondAttribute="trailing" constant="-20" id="5lM-LE-DyN"/>
+                            <constraint firstItem="DxM-pV-sJ8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="7A6-eP-dzZ"/>
+                            <constraint firstItem="vGC-77-YWm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9B7-hs-pHN"/>
+                            <constraint firstItem="Yjx-BW-QUm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DNi-8V-PtJ"/>
+                            <constraint firstItem="SdS-Ly-IoJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Exx-y6-W8X"/>
+                            <constraint firstItem="tDC-oF-cZB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GSc-kx-fcd"/>
+                            <constraint firstItem="VX7-HU-bwD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I1P-E5-7cD"/>
+                            <constraint firstItem="us1-M1-dXa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Jac-mj-coZ"/>
+                            <constraint firstItem="P9P-C3-84I" firstAttribute="top" secondItem="VX7-HU-bwD" secondAttribute="bottom" constant="8" id="LjZ-Fr-sJO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tDC-oF-cZB" secondAttribute="bottom" constant="20" id="OKj-xF-RXX"/>
+                            <constraint firstItem="vGC-77-YWm" firstAttribute="top" secondItem="hzq-m9-l82" secondAttribute="bottom" constant="8" id="RzW-JD-QVH"/>
+                            <constraint firstItem="V6w-tj-Kzh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Sot-77-JzC"/>
+                            <constraint firstItem="VX7-HU-bwD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WUy-NH-TZL"/>
+                            <constraint firstItem="SdS-Ly-IoJ" firstAttribute="top" secondItem="VX7-HU-bwD" secondAttribute="bottom" constant="8" id="Y8m-28-ajT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DxM-pV-sJ8" secondAttribute="bottom" id="dgG-q0-WG5"/>
+                            <constraint firstItem="V6w-tj-Kzh" firstAttribute="top" secondItem="us1-M1-dXa" secondAttribute="bottom" constant="8" id="fau-SX-YUP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V6w-tj-Kzh" secondAttribute="bottom" constant="20" id="ign-Of-otv"/>
+                            <constraint firstItem="DxM-pV-sJ8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="ipw-D5-gKK"/>
+                            <constraint firstItem="tDC-oF-cZB" firstAttribute="top" secondItem="vGC-77-YWm" secondAttribute="bottom" constant="8" id="nxj-uu-ISG"/>
+                            <constraint firstItem="VX7-HU-bwD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="odN-l1-P19"/>
+                            <constraint firstItem="hzq-m9-l82" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x5z-AD-4vn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="P1Label" destination="hzq-m9-l82" id="7N6-bG-hpd"/>
+                        <outlet property="P1heldPoint" destination="tDC-oF-cZB" id="AmM-vl-Fuj"/>
+                        <outlet property="P1turnPoints" destination="vGC-77-YWm" id="FXK-B9-GUq"/>
+                        <outlet property="P2Label" destination="Yjx-BW-QUm" id="778-LM-BUk"/>
+                        <outlet property="P2heldPoint" destination="V6w-tj-Kzh" id="bR2-5W-n7I"/>
+                        <outlet property="P2turnPoint" destination="us1-M1-dXa" id="V3o-ew-zxD"/>
+                        <outlet property="imageView" destination="DxM-pV-sJ8" id="wlU-q0-Dv7"/>
+                        <outlet property="instruction" destination="VX7-HU-bwD" id="TRH-Ow-YH3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="848" y="395"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.png" width="600" height="600"/>
+        <image name="pig.jpg" width="720" height="405"/>
+    </resources>
 </document>

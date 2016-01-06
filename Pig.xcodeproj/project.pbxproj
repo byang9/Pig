@@ -12,6 +12,14 @@
 		4ABCE1821BF94E7A002B0FC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCE1801BF94E7A002B0FC5 /* Main.storyboard */; };
 		4ABCE1841BF94E7A002B0FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCE1831BF94E7A002B0FC5 /* Assets.xcassets */; };
 		4ABCE1871BF94E7A002B0FC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCE1851BF94E7A002B0FC5 /* LaunchScreen.storyboard */; };
+		4ABCE18F1BF94EC4002B0FC5 /* pig.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4ABCE18E1BF94EC4002B0FC5 /* pig.jpg */; };
+		4ACE5BF61C39E3EB009D8BD2 /* OpenScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACE5BF51C39E3EB009D8BD2 /* OpenScreenController.swift */; };
+		4ACE5C011C3C93D9009D8BD2 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5BFB1C3C93D9009D8BD2 /* 3.png */; };
+		4ACE5C021C3C93D9009D8BD2 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5BFC1C3C93D9009D8BD2 /* 4.png */; };
+		4ACE5C031C3C93D9009D8BD2 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5BFD1C3C93D9009D8BD2 /* 6.png */; };
+		4ACE5C041C3C93D9009D8BD2 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5BFE1C3C93D9009D8BD2 /* 5.png */; };
+		4ACE5C051C3C93D9009D8BD2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5BFF1C3C93D9009D8BD2 /* 2.png */; };
+		4ACE5C061C3C93D9009D8BD2 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACE5C001C3C93D9009D8BD2 /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		4ABCE1831BF94E7A002B0FC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4ABCE1861BF94E7A002B0FC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ABCE1881BF94E7A002B0FC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ABCE18E1BF94EC4002B0FC5 /* pig.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pig.jpg; sourceTree = "<group>"; };
+		4ACE5BF51C39E3EB009D8BD2 /* OpenScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenScreenController.swift; sourceTree = "<group>"; };
+		4ACE5BFB1C3C93D9009D8BD2 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = ../../../../Downloads/3.png; sourceTree = "<group>"; };
+		4ACE5BFC1C3C93D9009D8BD2 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = ../../../../Downloads/4.png; sourceTree = "<group>"; };
+		4ACE5BFD1C3C93D9009D8BD2 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = ../../../../Downloads/6.png; sourceTree = "<group>"; };
+		4ACE5BFE1C3C93D9009D8BD2 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = ../../../../Downloads/5.png; sourceTree = "<group>"; };
+		4ACE5BFF1C3C93D9009D8BD2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = ../../../../Downloads/2.png; sourceTree = "<group>"; };
+		4ACE5C001C3C93D9009D8BD2 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = ../../../../Downloads/1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +72,15 @@
 			children = (
 				4ABCE17C1BF94E7A002B0FC5 /* AppDelegate.swift */,
 				4ABCE17E1BF94E7A002B0FC5 /* ViewController.swift */,
+				4ACE5BF51C39E3EB009D8BD2 /* OpenScreenController.swift */,
 				4ABCE1801BF94E7A002B0FC5 /* Main.storyboard */,
+				4ABCE18E1BF94EC4002B0FC5 /* pig.jpg */,
+				4ACE5BFB1C3C93D9009D8BD2 /* 3.png */,
+				4ACE5BFC1C3C93D9009D8BD2 /* 4.png */,
+				4ACE5BFD1C3C93D9009D8BD2 /* 6.png */,
+				4ACE5BFE1C3C93D9009D8BD2 /* 5.png */,
+				4ACE5BFF1C3C93D9009D8BD2 /* 2.png */,
+				4ACE5C001C3C93D9009D8BD2 /* 1.png */,
 				4ABCE1831BF94E7A002B0FC5 /* Assets.xcassets */,
 				4ABCE1851BF94E7A002B0FC5 /* LaunchScreen.storyboard */,
 				4ABCE1881BF94E7A002B0FC5 /* Info.plist */,
@@ -122,8 +146,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACE5C021C3C93D9009D8BD2 /* 4.png in Resources */,
+				4ACE5C011C3C93D9009D8BD2 /* 3.png in Resources */,
 				4ABCE1871BF94E7A002B0FC5 /* LaunchScreen.storyboard in Resources */,
 				4ABCE1841BF94E7A002B0FC5 /* Assets.xcassets in Resources */,
+				4ABCE18F1BF94EC4002B0FC5 /* pig.jpg in Resources */,
+				4ACE5C031C3C93D9009D8BD2 /* 6.png in Resources */,
+				4ACE5C061C3C93D9009D8BD2 /* 1.png in Resources */,
+				4ACE5C041C3C93D9009D8BD2 /* 5.png in Resources */,
+				4ACE5C051C3C93D9009D8BD2 /* 2.png in Resources */,
 				4ABCE1821BF94E7A002B0FC5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACE5BF61C39E3EB009D8BD2 /* OpenScreenController.swift in Sources */,
 				4ABCE17F1BF94E7A002B0FC5 /* ViewController.swift in Sources */,
 				4ABCE17D1BF94E7A002B0FC5 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +318,7 @@
 				4ABCE18D1BF94E7A002B0FC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
